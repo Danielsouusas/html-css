@@ -4,47 +4,50 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Media Query</title>
+          <link href="https://fonts.googleapis.com/icon?family=Material+icons" rel="stulesheet">
           <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
      <header>
-         <h1>Meu Site</h1>
-         <menu>
-          <li><a href="">Opção 1</a></li>
-          <li><a href="">Opção 2</a></li>
-          <li><a href="">Opção 3</a></li>
-          <li><a href="">Opção 4</a></li>
+          <h1>Meu Site</h1>
+          <i id="burguer" class="Material-icones">menu</i>
+         <menu id="itens">
+             <ul>
+               <li><a href="#">Opção 1</a></li>
+               <li><a href="#">Opção 2</a></li>
+               <li><a href="#">Opção 3</a></li>
+               <li><a href="#">Opção 4</a></li>
+          </ul>
          </menu>
      </header>
      <main>
           <article>
                 <h2>Testando Media Queries</h2>
-                <p>
-          1 - Aquele que ama a correção ama a ciência, mas o que detesta a reprimenda é um insensato.
+           <p>1 - Aquele que ama a correção ama a ciência, mas o que detesta a reprimenda é um insensato.
 
-          2 - O homem de bem alcança a benevolência do Senhor o Senhor condena o homem que premedita o mal.
+          2 - O homem de bem alcança a benevolência do Senhor o Senhor condena o homem que premedita o mal.</p>
 
           3 - Não se firma o homem pela impiedade, mas a raiz dos justos não será abalada.
 
-          4 - Uma mulher virtuosa é a coroa de seu marido, mas a insolente é como a cárie nos seus ossos.
+           <p>4 - Uma mulher virtuosa é a coroa de seu marido, mas a insolente é como a cárie nos seus ossos.
 
           5 - Os pensamentos dos justos são cheios de retidão as tramas dos perversos são cheias de dolo.
 
-          6 - As palavras dos ímpios são ciladas mortíferas, enquanto a boca dos justos os salva.
+          6 - As palavras dos ímpios são ciladas mortíferas, enquanto a boca dos justos os salva.</p>
 
-          7 - Transtornados, os ímpios não subsistirão, mas a casa dos justos permanecerá firme.
+           <p>7 - Transtornados, os ímpios não subsistirão, mas a casa dos justos permanecerá firme.
 
           8 - Avalia-se um homem segundo a sua inteligência, mas o perverso de coração incorrerá em desprezo.
 
           9 - Mais vale um homem humilde, que tem um servo, que o jactancioso, que não tem o que comer.
 
-          10 - O justo cuida das necessidades do seu gado, mas cruéis são as entranhas do ímpio.
+          10 - O justo cuida das necessidades do seu gado, mas cruéis são as entranhas do ímpio.</p>
 
-          11 - Quem cultiva sua terra será saciado de pão quem procura as futilidades é um insensato.
+           <p>11 - Quem cultiva sua terra será saciado de pão quem procura as futilidades é um insensato.
 
           12 - O ímpio cobiça o laço do perverso, mas a raiz do justo produz fruto.
 
-          13 - No pecado dos lábios há uma cilada funesta, mas o justo livra-se da angústia.
+          13 - No pecado dos lábios há uma cilada funesta, mas o justo livra-se da angústia.</p>
 
           14 - O homem se farta com o fruto de sua boca cada qual recebe a recompensa da obra de suas mãos.
 
@@ -53,6 +56,15 @@
           16 - O louco mostra logo a sua irritação o circunspecto dissimula o ultraje.</p>
 
           </article>
-     </main>     
+     </main>
+     <script>
+          function clickMenu() {
+               if (itens.style.disolay == 'block'){
+                   itens.style.display = 'none' 
+               } else {
+                   itens.style.display = 'block' 
+               }
+          }     
+     </script>     
 </body>
 </html>
